@@ -11,9 +11,45 @@
 <body>
 <div class="popup">
     <div class="popup-container">
-        <div class="popup-header"></div>
-        <div class="popup-form"></div>
-        <div class="popup-"
+        <div class="popup-header">
+            <h1 class="feedback">ваш фидбек</h1>
+        </div>
+        <div class="popup-form">
+            <form class="select-form">
+                <label class="select-group">
+                    <span class="select-label">
+                        Как часто вы заходите на наш сайт?
+                    </span>
+                    <select class="select">
+                        <option value="everyday">Почти каждый день</option>
+                        <option value="some__days">Раз в несколько дней</option>
+                        <option value="some__weeks">Раз в несколько недель</option>
+                        <option value="some__years">Несколько раз в год</option>
+                    </select>
+                </label>
+
+
+            </form>
+        </div>
+        <div class="radio">
+            <span class="checkbox-text">Вы подписаны на e-mail рассылку?</span>
+            <div class="form_radio">
+                <input id="radio-1" type="radio" name="radio" value="yes" checked>
+                <label for="radio-1">Да</label>
+            </div>
+
+            <div class="form_radio">
+                <input id="radio-2" type="radio" name="radio" value="no">
+                <label for="radio-2">Нет</label>
+            </div>
+        </div>
+        <div class="question">
+            <label class="field-group">
+                <span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+            </label>
+        </div>
+            <button class="popup-button" type="submit">отправить</button>
     </div>
 </div>
 <header class="welcome">
@@ -32,9 +68,9 @@
             </nav>
         </div>
 
-        <div class="welcome-title">
+        <h1 class="welcome-title">
             Блог о творчестве, спорте, и образе жизни
-        </div>
+        </h1>
     </div>
 </header>
 <main class="content">
@@ -42,10 +78,7 @@
         <section class="trendy__now">
             <h1 class="trendy__name">сейчас в тренде</h1>
             <div class="cards">
-            <div class="card">
-                <div class="card__preview">
-                <img src="images/trend1.jpg">
-                </div>
+            <div class="card garden">
                 <div class="card__info">
                     <div class="card-tags">
                         <a class="card-tag" href="0"> lifestyle </a>
@@ -55,10 +88,7 @@
                     </span>
                 </div>
             </div>
-                    <div class="card">
-                        <div class="card__preview">
-                            <img src="images/trend2.jpg">
-                        </div>
+                    <div class="card cheese">
                         <div class="card__info">
                             <div class="card-tags">
                                 <a class="card-tag" href="0"> food </a>
@@ -68,10 +98,7 @@
                     </span>
                         </div>
                     </div>
-                            <div class="card">
-                                <div class="card__preview">
-                                    <img src="images/trend3.jpg">
-                                </div>
+                            <div class="card mountains">
                                 <div class="card__info">
                                     <div class="card-tags">
                                         <a class="card-tag" href="0"> lifestyle </a>
@@ -82,10 +109,7 @@
                                     </span>
                                 </div>
                             </div>
-                                    <div class="card">
-                                        <div class="card__preview">
-                                            <img src="images/trend4.jpg">
-                                        </div>
+                                    <div class="card limons">
                                         <div class="card__info">
                                             <div class="card-tags">
                                                 <a class="card-tag" href="0"> food </a>
@@ -327,7 +351,7 @@
                 <form class="searching">
                     <label class="search-group">
                         <span class="visually-hidden"> Введите поисковый запрос </span>
-                        <input class="search-field" name="query" placeholder="Найти..." required>
+                        <input class="search-field" name="query" value="search" placeholder="Найти..." required>
                     </label>
                     <button class="search-button">
                         <span class="visually-hidden"> Поиск </span>
@@ -340,7 +364,7 @@
                 <form>
                     <div class="form-group">
                         <label class="field-group">
-                            <input type="email" class="field" placeholder="Ваш email-адрес" required>
+                            <input type="email" class="field" value="mailing" placeholder="Ваш email-адрес" required>
                         </label>
                     </div>
                     <button class="button button-submit" type="submit">Подписаться</button>
@@ -427,7 +451,8 @@
                         </div>
                 <div class="product__button">
                     <button class="to__shop" type="button">в магазин</button>
-                </div>                    </div>
+                </div>
+            </div>
         </article>
         <article class="product">
             <div class="product__imgbox">
@@ -507,6 +532,3 @@
     </div>
 </footer>
 
-
-</body>
-</html>
