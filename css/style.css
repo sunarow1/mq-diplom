@@ -85,6 +85,7 @@ html {
 
 .form-radio {
     margin-bottom: 10px;
+
 }
 
 
@@ -92,6 +93,7 @@ html {
     content: "";
     display: inline-block;
     vertical-align: middle;
+
 
     margin-right: 8px;
 
@@ -105,34 +107,46 @@ html {
 }
 
 .radio-group {
-    display:inline-block;
-    font-size:15px;
+    display: inline-block;
+    font-size: 15px;
 }
 
-.radio-group:nth-of-type(n+2) {
-    margin-left:15px;
-}
+
 
 .radio:checked {
     outline: 3px solid #b59f5b;
     outline-offset: 5px;
 }
-.radio:checked ~ .checkbox-text::before {
+.checkbox-text {
     font-size: 13px;
     font-weight: normal;
     color: #0f0d0e;
     margin: auto;
+}
+.checkbox-text+label.radio-group {
+    color:#0f0d0e;
+    margin: auto;
+    font-size: 13px;
+    font-weight: normal;
+}
+span.checkbox-text~label.radio-group {
+    color:#0f0d0e;
+    margin: auto;
+    font-size: 13px;
+    font-weight: normal;
+}
+.radio:checked~.checkbox-text::before {
+    color:#ff0000;
     background-image: url("../svg/form-circle.svg");
 }
 
 .radio {
-    position: absolute;
-    clip: rect(1px,1px,1px,1px);
-    height: 1px;
-    width: 1px;
+    display: none;
 }
 
-
+.question {
+    margin-top: 70px;
+}
 
 
 .field-label  {
@@ -146,6 +160,18 @@ html {
     max-width: 330px;
     min-height: 130px;
     max-height: 130px;
+}
+
+
+.popup-button {
+    width: 330px;
+    height: 50px;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+
+    background-color: #b59f5b;
 }
 .welcome {
     margin: 0;
